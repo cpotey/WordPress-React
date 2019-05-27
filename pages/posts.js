@@ -7,6 +7,8 @@ import PageHeader from "../components/PageHeader"
 import { withRouter } from "next/router";
 import axios from 'axios';
 
+
+
 const Posts = (props) => {
     console.log(props)
     return (
@@ -31,7 +33,8 @@ const Posts = (props) => {
 Posts.getInitialProps = async function({query}) {
     const currentPage = query.page ? query.page : 1;
     // const res = await axios.get('https://vuonline.co.uk/wp-json/wp/v2/posts', {
-    const res = await axios.get('http://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+    const res = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+    // const res = await axios.get('https://potey.co.uk/wp-json/wp/v2/posts?_embed', {
         params: {
           page: currentPage,
           per_page: 10

@@ -29,7 +29,7 @@ CategoryPage.getInitialProps = async function({query}) {
     
         const currentPage = query.page ? query.page : 1;
 
-        const categories = await axios.get('http://blog.connorpote.co.uk/wp-json/wp/v2/categories', {
+        const categories = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/categories', {
                 params: {
                   slug: query.slug
                 }
@@ -37,7 +37,7 @@ CategoryPage.getInitialProps = async function({query}) {
             
         const category = categories.data[0];
         console.log(category)
-        const posts = await axios.get('http://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+        const posts = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
                 params: {
                     categories: category.id,
                     per_page: 10,
