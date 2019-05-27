@@ -3,18 +3,7 @@ import Link from 'next/link'
 
 const PageHeader = (props) => {
     
-    {/* <div className={(props.isPost === true ) ? "page-header is-post" : `page-header`} style={{ 
-        backgroundSize: "cover",
-        backgroundRepeat: "no-repeat",
-        backgroundPosition: "center center",
-        backgroundImage: (props.image ? 
-            (
-                "url(" + props.image + ")"
-            ) : (
-                ""
-            )
-        ) 
-    }}> */}
+   console.log(props)
 
     return (
 
@@ -48,7 +37,7 @@ const PageHeader = (props) => {
 
                 { props.category ? 
                 
-                    ((props.category.slug !== "uncategorized") ? <Link href={`/category/${props.category.slug}`}>
+                    ((props.category.slug !== "uncategorized") ? <Link as={`/category/${props.category.slug}`} href={`/category?slug=${props.category.slug}`}>
                         <a className="category button">{props.category.name}</a>
                     </Link>  
                     : ``

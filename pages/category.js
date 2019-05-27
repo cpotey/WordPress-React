@@ -8,7 +8,7 @@ import { withRouter } from "next/router";
 import axios from 'axios';
 
 const CategoryPage = (props) => {
-    // console.log(props)
+    console.log(props)
     return (
         <Layout>
 
@@ -25,13 +25,14 @@ const CategoryPage = (props) => {
     )
 }
 
-CategoryPage.getInitialProps = async function({query}) {
+CategoryPage.getInitialProps = async function(context) {
     
-        const currentPage = query.page ? query.page : 1;
+    const slug = context.query.slug 
+        const currentPage = context.query.page ? context.query.page : 1;
 
         const categories = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/categories', {
                 params: {
-                  slug: query.slug
+                  slug: slug
                 }
             })
             

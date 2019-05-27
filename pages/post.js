@@ -1,8 +1,8 @@
 import Layout from '../components/Layout.js'
 import PageHeader from "../components/PageHeader"
-import CategoryList from "../components/CategoryList";
 import PostList from "../components/PostList"
 
+import { withRouter } from "next/router";
 import Head from 'next/head'
 import axios from 'axios';
 
@@ -200,4 +200,4 @@ Post.getInitialProps = async function(context) {
     }
 }
 
-export default Post
+export default withRouter(Post)

@@ -2,7 +2,7 @@
 import Link from 'next/link'
 
 const PostListItem = ({ post, index }) => {
-    console.log(post)
+    // console.log(post)
 
     let indexClass = (index === 0 || index === 5 ) ? `col-xs-3 col-md-6 col-lg-6 ` : `col-xs-3 col-md-6 col-lg-3 `; 
 
