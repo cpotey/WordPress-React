@@ -79,13 +79,14 @@ const PageHeader = (props) => {
             display: block;
             filter: blur(8px);
             position: absolute;
-            right: 0px;
+            right: -10%;
+            left: -10%;
             top: -50%;
             z-index: 0;
             background-position: 50% 50%;
             background-repeat: no-repeat;
             opacity: 1;
-            width:100%;
+            width: 120%;
             height: auto;
             transition: .3s ease;
 

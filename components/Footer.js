@@ -8,15 +8,10 @@ const Footer = (props) => (
   <footer>
     
     <div className="container">
-      <Link href="/">
-        <a style={linkStyle}>Home</a>
-      </Link>
-      <Link href="/about">
-        <a style={linkStyle}>About</a>
-      </Link>
-      <Link href="/posts">
-        <a style={linkStyle}>Blog</a>
-      </Link>
+     
+      <div className="right">
+        <p>Built by <a href="https://connorpote.co.uk/" target="_blank" rel="noopener noreferrer">Connor Pote</a>. WordPress version <a href="https://blog.connorpote.co.uk/" target="_blank" rel="noopener noreferrer">here</a></p>
+      </div>
     </div>
     <style jsx>{`
         footer {
@@ -35,12 +30,22 @@ const Footer = (props) => (
         }
 
         a {
-          text-decoration: none;
           color: rgb(153, 153, 153);
+          text-decoration:underline;
+        }
+        p {
+          color: rgb(153, 153, 153);
+          margin:0;
         }
 
         a:hover {
           opacity: 0.6;
+        }
+        .container {
+          display:flex;
+        }
+        .right {
+          margin-left:auto;
         }
       `}</style>
       <style jsx global>{`

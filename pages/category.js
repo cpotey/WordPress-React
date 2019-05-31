@@ -10,7 +10,7 @@ import axios from 'axios';
 const CategoryPage = (props) => {
     console.log(props)
     return (
-        <Layout>
+        <div>
 
            
             <PageHeader 
@@ -21,7 +21,7 @@ const CategoryPage = (props) => {
 
             {<PostList posts={props.posts} />}
             <Pagination totalPages={props.totalPages} />
-        </Layout>
+        </div>
     )
 }
 

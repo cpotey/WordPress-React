@@ -6,7 +6,7 @@ import axios from 'axios';
 const About = props => {
     console.log(props)
     return (
-        <Layout>
+        <div>
             
             <PageHeader 
                 header="About"  
@@ -21,7 +21,7 @@ const About = props => {
                 </div>
             </div>
 
-        </Layout>
+        </div>
     )
 }
 

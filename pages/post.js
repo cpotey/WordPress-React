@@ -25,7 +25,7 @@ const Post = props => {
     console.log(props)
     let excerpt = props.post.excerpt.rendered.replace(/(<([^>]+)>)/ig,"");
     return (
-        <Layout>
+        <div>
 
             <Head>
                 <title>{props.post.title.rendered}</title>
@@ -176,7 +176,7 @@ const Post = props => {
                 }
 
             `}</style>
-        </Layout>
+            </div>
     )   
 }
 

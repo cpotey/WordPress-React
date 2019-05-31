@@ -12,7 +12,7 @@ import axios from 'axios';
 const Posts = (props) => {
     console.log(props)
     return (
-        <Layout>
+        <div>
 
            
            
@@ -23,7 +23,7 @@ const Posts = (props) => {
 
             {<PostList posts={props.posts} />}
             <Pagination totalPages={props.totalPages} />
-        </Layout>
+        </div>
     )
 }
 

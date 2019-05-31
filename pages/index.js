@@ -9,7 +9,7 @@ const Index = props => {
   console.log(props)
 
   return (
-    <Layout>
+    <div>
       
         <PageHeader 
             header={props.settings.name} 
@@ -45,7 +45,7 @@ const Index = props => {
         `}</style>
 
         
-    </Layout>
+</div>
 
   )
 }

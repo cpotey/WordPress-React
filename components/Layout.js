@@ -1,5 +1,7 @@
-import Header from './Header'
-import Footer from "./Footer"
+import Header from './Header';
+import Footer from "./Footer";
+
+import axios from 'axios';
 
 const layoutStyle = {
   // margin: 20,
@@ -7,9 +9,13 @@ const layoutStyle = {
   // border: '1px solid #DDD'
 }
 
-const Layout = props => (
+const Layout = props => {
+  
+  // console.log(props)
+
+  return (
   <div style={layoutStyle}>
-    <Header />
+    <Header title={props.title}/>
     <main>
       {props.children}
     </main>
@@ -101,5 +107,8 @@ const Layout = props => (
       <Footer />
   </div>
 )
+}
+
+
 
 export default Layout
