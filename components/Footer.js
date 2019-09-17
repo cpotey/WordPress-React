@@ -10,7 +10,7 @@ const Footer = (props) => (
     <div className="container">
      
       <div className="right">
-        <p>Built by <a href="https://connorpote.co.uk/" target="_blank" rel="noopener noreferrer">Connor Pote</a>. WordPress version <a href="https://blog.connorpote.co.uk/" target="_blank" rel="noopener noreferrer">here</a></p>
+        <p>Built by <a href="https://connorpote.co.uk/" target="_blank" rel="noopener noreferrer">Connor Pote</a>. WordPress version <a href="https://potey.co.uk/" target="_blank" rel="noopener noreferrer">here</a></p>
       </div>
     </div>
     <style jsx>{`

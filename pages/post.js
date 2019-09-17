@@ -182,9 +182,9 @@ const Post = props => {
 
 Post.getInitialProps = async function(context) {
     const slug = context.query.title 
-    const post = await axios.get(`https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed&slug=${ slug }`)
+    const post = await axios.get(`https://potey.co.uk/wp-json/wp/v2/posts?_embed&slug=${ slug }`)
     
-    const otherPosts = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+    const otherPosts = await axios.get('https://potey.co.uk/wp-json/wp/v2/posts?_embed', {
         params: {
           per_page: 3,
           exclude: post.data[0].id

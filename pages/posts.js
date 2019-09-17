@@ -29,7 +29,7 @@ const Posts = (props) => {
 
 Posts.getInitialProps = async function({query}) {
     const currentPage = query.page ? query.page : 1;
-    const res = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+    const res = await axios.get('https://potey.co.uk/wp-json/wp/v2/posts?_embed', {
         params: {
           page: currentPage,
           per_page: 10

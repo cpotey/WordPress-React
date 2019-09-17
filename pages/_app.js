@@ -20,7 +20,8 @@ class MyApp extends App {
     if (Component.getInitialProps) {
       pageProps = await Component.getInitialProps(ctx);
     }
-    const siteData = await axios.get(`https://blog.connorpote.co.uk/wp-json`)
+    // const siteData = await axios.get(`https://blog.connorpote.co.uk/wp-json`)
+    const siteData = await axios.get(`https://potey.co.uk/wp-json`)
 
     return { pageProps,siteData: siteData.data.name };
     // console.log(this)

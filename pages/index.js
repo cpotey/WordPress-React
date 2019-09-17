@@ -52,9 +52,9 @@ const Index = props => {
 
 Index.getInitialProps = async function(context) {
 
-  const settings = await axios.get(`https://blog.connorpote.co.uk/wp-json`)
-  const homepage = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/pages/62')
-  const posts = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/posts?_embed', {
+  const settings = await axios.get(`https://potey.co.uk/wp-json`)
+  const homepage = await axios.get('https://potey.co.uk/wp-json/wp/v2/pages/62')
+  const posts = await axios.get('https://potey.co.uk/wp-json/wp/v2/posts?_embed', {
         params: {
           page: 1,
           per_page: 6

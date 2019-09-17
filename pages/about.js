@@ -26,7 +26,7 @@ const About = props => {
 }
 
 About.getInitialProps = async function(context) {
-    const res = await axios.get('https://blog.connorpote.co.uk/wp-json/wp/v2/pages/49')
+    const res = await axios.get('https://potey.co.uk/wp-json/wp/v2/pages/49')
 
     return { 
         about: res.data
